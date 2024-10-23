@@ -1,0 +1,22 @@
+1. GitHub レポジトリを Clone　コマンド実行したフォルダ内にローカルレポジトリを作成
+git clone https://github.com/sekstore/hello-world.git
+
+2. Branch を 作成。物理的にはフォルダ内に変化はない
+git branch new-cool-function
+
+3. 今作成した Branchを確認
+git branch
+
+例）このように表示　ここでは、mainレポジトリにいることを表している
+* main
+  new-cool-function
+
+4. チェックアウトして、Branchに移動する　（ホテルのチェックアウトに意味は近い）
+git checkout new-cool-function
+
+例）
+git branch
+  main
+* new-cool-function
+
+5. 
