@@ -1,3 +1,7 @@
+0. GitHubアカウント情報を登録
+git config --global user.email "michio19660505@gmail.com"
+git config --global user.name "sekstore"
+
 1. GitHub レポジトリを Clone　コマンド実行したフォルダ内にローカルレポジトリを作成
 git clone https://github.com/sekstore/hello-world.git
 
@@ -19,4 +23,31 @@ git branch
   main
 * new-cool-function
 
-5. 
+5. ここで、ファイルを編集
+
+6. 編集が完了したら 
+Gitレポジトリに登録されていないファイルなら
+6.1 git add ファイル名
+しからコミット
+6.2 git commit -m "コメント"
+
+ここまでで、ろーカルレポジトリにはファイルを反映している。
+リモートレポジトリ（GitHub）には未反映
+
+7. コミットログを確認
+git log --pretty=oneline
+
+例）6.2 で登録したコミットログが表示される
+cde86e8943029d8adaae9aa4111ddeaa5eff1133 (HEAD -> new-cool-function) v1.0 text_ver1.0 に First Versionと記載
+
+8. master（main）へのマージ
+8.1 git checkout main　これでレポジトリを移動
+8.2 git branch　移動を確認
+
+8.3 git merge マージするブランチ名　たとえば new-cool-function
+
+9. ローカル mainレポジトリにおこなった変更を、リモートレポジトリに反映
+git push origin main　（mainの部分がローカルレポジトリ名になる）
+
+10. ここからは、Tagだね...
+
